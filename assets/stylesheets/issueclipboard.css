@@ -190,10 +190,12 @@
 
 .issue-copy-button {
     cursor: pointer;
-    width: 16px;
+    /* width: 16px; */
     height: 16px;
     padding-left: 0px;
     vertical-align: bottom;
+    
+    font-size: 11px;
 }
 
 .issue-copy-button:focus {

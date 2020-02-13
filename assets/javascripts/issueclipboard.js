@@ -18,7 +18,7 @@
             copied_info = "Copied to clipboard",
             button =  '<a class="icon icon-copy hint--right issue-copy-button" ' +
                 'data-hint="' + global.issue_clipboard.hover_info + '"' +
-                ' data-clipboard-text="'+htmlEncode(text)+'"></a>';
+                ' data-clipboard-text="'+htmlEncode(text)+'">Copy</a>';
 
         var $button = $(button).appendTo($header);
 
