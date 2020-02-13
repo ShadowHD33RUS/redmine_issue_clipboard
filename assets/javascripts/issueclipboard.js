@@ -13,9 +13,7 @@
             $title = $('.subject h3').first(),
             issue_id = $header.text().split(" ").slice(-1)[0],
             referencing_keyword = global.issue_clipboard.reference_keyword,
-            text = $title.text() + "\n" + referencing_keyword + " "+issue_id,
-            hover_info = "Copy commit message to clipboard",
-            copied_info = "Copied to clipboard",
+            text = issue_id+": " + $title.text(),
             button =  '<a class="icon icon-copy hint--right issue-copy-button" ' +
                 'data-hint="' + global.issue_clipboard.hover_info + '"' +
                 ' data-clipboard-text="'+htmlEncode(text)+'">Copy</a>';
